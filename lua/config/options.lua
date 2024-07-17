@@ -4,15 +4,14 @@
 
 vim.opt.winbar = "%=%m %f"
 
-vim.opt.nu = true
+vim.opt.number = true
 vim.opt.relativenumber = true
 
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 vim.opt.scrolloff = 8
 
--- Remove inline hints
-vim.opt.showmode = false
+-- Remove inlay hints
 
 local augroup = vim.api.nvim_create_augroup("strdr4605", { clear = true })
 vim.api.nvim_create_autocmd("FileType", {
