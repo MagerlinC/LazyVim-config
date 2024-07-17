@@ -46,9 +46,9 @@ return {
     dashboard.section.header.val = vim.split(logo, "\n")
     -- stylua: ignore
     dashboard.section.buttons.val = {
-      dashboard.button("f", "󰈞" .. " Find file",       LazyVim.pick()),
+      dashboard.button("f", "󰈞" .. " Find file",       [[<cmd> Telescope find_files <cr>]]),
       dashboard.button("n", "" .. " New file",        [[<cmd> ene <BAR> startinsert <cr>]]),
-      dashboard.button("c", "" .. " Config",          LazyVim.pick.config_files()),
+      dashboard.button("c", "" .. " Config",          [[<cmd> e ~/.config/nvim/init.lua <cr>]]),
       dashboard.button("s", "" .. " Restore Session", [[<cmd> lua require("persistence").load() <cr>]]),
       dashboard.button("q", "󰈆" .. " Quit",            "<cmd> qa <cr>"),
     }
