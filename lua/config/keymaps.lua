@@ -16,8 +16,8 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "Q", "<nop>")
 
 -- Quick fix list navigation
-vim.keymap.set("n", "<C-k>", "<cmd>lnext<CR>zz", { silent = true })
-vim.keymap.set("n", "<C-j>", "<cmd>lprev<CR>zz", { silent = true })
+-- vim.keymap.set("n", "<C-k>", "<cmd>lnext<CR>zz", { silent = true })
+-- vim.keymap.set("n", "<C-j>", "<cmd>lprev<CR>zz", { silent = true })
 
 -- Change all occurences of current word
 vim.keymap.set(
